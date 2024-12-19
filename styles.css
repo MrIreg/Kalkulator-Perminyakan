@@ -1,0 +1,163 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  background: linear-gradient(135deg, #141e30, #243b55);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+}
+
+.button-primary {
+  padding: 12px 25px;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s;
+}
+
+.button-primary:hover {
+  transform: translateY(-3px);
+  background-color: #43a047;
+}
+
+/* Popup Styles */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 400px;
+  background: white;
+  color: black;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  z-index: 1000;
+}
+
+.popup.hidden {
+  display: none;
+}
+
+.popup-content {
+  padding: 20px;
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  color: red;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.dropdown {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.form-container {
+  margin-top: 20px;
+}
+
+input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #2575fc;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+/* Result Container */
+.result-container {
+  background: linear-gradient(135deg, #4caf50, #81c784);
+  color: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.result-container h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.result-container p {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.result-container .icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.result-container .btn-close {
+  margin-top: 15px;
+  background-color: white;
+  color: #4caf50;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.result-container .btn-close:hover {
+  background-color: #f5f5f5;
+}
+
+/* Animation for result */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulator OOIP & OGIP</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <button id="openPopup" class="button-primary">Buka Kalkulator</button>
+  </div>
+
+  <!-- Popup -->
+  <div id="popup" class="popup hidden">
+    <div class="popup-content">
+      <button id="closePopup" class="close-button">&times;</button>
+      <h2>Pilih Tipe Kalkulator</h2>
+      <select id="calculationType" class="dropdown">
+        <option value="" disabled selected>Pilih</option>
+        <option value="ooip">Kalkulasi OOIP</option>
+        <option value="ogip">Kalkulasi OGIP</option>
+      </select>
+      <div id="formContainer" class="form-container"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
